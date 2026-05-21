@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tienda de videojuegos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="img/logo.webp" alt="Logotipo de Tienda de videojuegos" width="120">
+        </figure>
+        <h1>Tienda de videojuegos</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+            <p>Bienvenido a la mejor selección de videojuegos, consolas y accesorios. Encuentra tus títulos favoritos y novedades aquí.</p>
+            <p>Explora nuestras secciones: catálogos curados, ofertas semanales y noticias sobre lanzamientos.</p>
+        </section>
+
+        <section id="catalogo">
+            <h2>Catálogo destacado</h2>
+            <p>Seleccionados por nuestra tienda: juegos recientes, clásicos restaurados y las mejores ediciones.</p>
+
+            <div class="grid" aria-label="Listado de juegos">
+                <article class="card game">
+                    <img src="img/1065153_front.jpg" alt="Portada Juego 1" width="220">
+                    <h3>Juego 1: Aventura Épica</h3>
+                    <p class="muted">Acción • Aventura • 1-4 jugadores</p>
+                    <p class="price">€49.99</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </article>
+
+                <article class="card game">
+                    <img src="img/Forza.webp" alt="Portada Juego 2" width="220">
+                    <h3>Juego 2: Carreras Pro</h3>
+                    <p class="muted">Carreras • Multijugador</p>
+                    <p class="price">€39.99</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </article>
+
+                <article class="card game">
+                    <img src="img/screenshot-1041.avif" alt="Portada Juego 3" width="220">
+                    <h3>Juego 3: Estrategia Total</h3>
+                    <p class="muted">Estrategia • 1 jugador</p>
+                    <p class="price">€29.99</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="ofertas">
+            <h2>Ofertas y novedades</h2>
+            <p>Rebajas de la semana y lanzamientos destacados. Consulta las promociones vigentes.</p>
+            <ul>
+                <li>20% de descuento en accesorios seleccionados.</li>
+                <li>Preventa abierta: edición coleccionista de "Aventura Épica".</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Información de contacto</h2>
+            <address>
+                <p>Dirección: Calle Ejemplo 123, Ciudad</p>
+                <p>Teléfono: <a href="tel:+34123456789">+34 123 456 789</a></p>
+                <p>Correo: <a href="mailto:info@tiendavideojuegos.example">info@tiendavideojuegos.example</a></p>
+            </address>
+
+            <form id="newsletter-form" aria-label="Suscripción newsletter" action="#" method="post">
+                <label for="email">Suscríbete a nuestro boletín</label>
+                <div style="display:flex;gap:.5rem;margin-top:.5rem;">
+                    <input id="email" name="email" type="email" placeholder="tu@correo.example" required>
+                    <button class="btn btn-primary" type="submit">Suscribir</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tienda de videojuegos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

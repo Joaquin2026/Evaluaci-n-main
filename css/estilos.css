@@ -1,0 +1,160 @@
+/* estilos.css
+    Paleta y variables */
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #9aa4b2;
+  --text: #e6eef8;
+  --accent: #4fd1c5;
+  --accent-2: #6b8cff;
+  --glass: rgba(255,255,255,0.04);
+  --radius: 12px;
+  --max-width: 1100px;
+  --gap: 1rem;
+  --fw-regular: 400;
+  --fw-medium: 600;
+  --fw-bold: 700;
+}
+
+/* Reset básico */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg) 0%, #071021 100%);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.45;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Contenedor central (aplica a hijos directos para HTML actual) */
+header, main, footer {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: calc(var(--radius) + 4px);
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  box-shadow: 0 8px 30px rgba(2,6,23,0.45);
+}
+
+/* Header: logo + título + nav */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));
+}
+header figure { margin: 0; display: flex; align-items: center; }
+header img { width: 64px; height: 64px; object-fit: cover; border-radius: 8px; display: block; }
+
+/* Título */
+header > h1 {
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  color: var(--text);
+  margin-left: 0.75rem;
+  flex: 1;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: var(--fw-medium);
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  transition: transform 180ms ease, background 180ms ease;
+  font-size: 0.95rem;
+}
+nav a:hover, nav a:focus {
+  background: var(--glass);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* Main / sections */
+main {
+  display: block;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+main section {
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255,255,255,0.02);
+}
+main section h2 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text); }
+main section p { color: var(--muted); font-size: 0.95rem; }
+
+/* Contacto / address */
+address {
+  font-style: normal;
+  display: block;
+  color: var(--muted);
+}
+address p { margin-bottom: 0.5rem; color: var(--muted); }
+address a {
+  color: var(--accent-2);
+  text-decoration: none;
+  font-weight: var(--fw-medium);
+}
+address a:hover { text-decoration: underline; }
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-top: 1px solid rgba(255,255,255,0.02);
+}
+
+/* Pequeños utilitarios */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-weight: var(--fw-medium);
+}
+.btn-primary {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #02121a;
+  box-shadow: 0 6px 18px rgba(79,209,197,0.12);
+}
+
+/* Accesibilidad y responsivo */
+:focus { outline: 2px solid rgba(107,140,255,0.18); outline-offset: 3px; }
+
+@media (max-width: 880px) {
+  header { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  header > h1 { order: 2; margin-left: 0; }
+  nav ul { flex-wrap: wrap; gap: 0.35rem; }
+  header img { width: 56px; height: 56px; }
+  main { padding: 0.5rem 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
