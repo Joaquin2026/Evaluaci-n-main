@@ -102,6 +102,178 @@ main section {
 main section h2 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text); }
 main section p { color: var(--muted); font-size: 0.95rem; }
 
+.catalog-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.catalog-actions label {
+  font-weight: var(--fw-medium);
+  color: var(--text);
+}
+
+.catalog-actions input[type="search"],
+.catalog-actions select {
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+}
+
+.catalog-actions input[type="search"] {
+  min-width: 200px;
+}
+
+.status-message {
+  margin-top: 0.85rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin: 0.75rem 0 0.4rem;
+}
+
+.card .price {
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: var(--fw-bold);
+  margin: 0.65rem 0 1rem;
+}
+
+nav a.active {
+  background: rgba(79, 209, 197, 0.16);
+}
+
+.catalog-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.catalog-actions label {
+  font-weight: var(--fw-medium);
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.catalog-actions input[type="search"],
+.catalog-actions select {
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+}
+
+.catalog-actions input[type="search"] {
+  min-width: 200px;
+}
+
+.catalog-actions .favorites-control {
+  white-space: nowrap;
+}
+
+.catalog-status {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.btn-secondary.active {
+  background: rgba(79, 209, 197, 0.18);
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.form-group input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+}
+
+.form-group input:focus {
+  outline: 2px solid rgba(79, 209, 197, 0.35);
+  outline-offset: 2px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-weight: var(--fw-medium);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #02121a;
+  box-shadow: 0 6px 18px rgba(79, 209, 197, 0.12);
+}
+
 /* Contacto / address */
 address {
   font-style: normal;

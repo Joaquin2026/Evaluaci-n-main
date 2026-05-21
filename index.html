@@ -33,31 +33,27 @@
             <h2>Catálogo destacado</h2>
             <p>Seleccionados por nuestra tienda: juegos recientes, clásicos restaurados y las mejores ediciones.</p>
 
-            <div class="grid" aria-label="Listado de juegos">
-                <article class="card game">
-                    <img src="img/1065153_front.jpg" alt="Portada Juego 1" width="220">
-                    <h3>Juego 1: Aventura Épica</h3>
-                    <p class="muted">Acción • Aventura • 1-4 jugadores</p>
-                    <p class="price">€49.99</p>
-                    <button class="btn btn-primary">Comprar</button>
-                </article>
+            <div class="catalog-actions">
+                <label for="search-input">Buscar juego:</label>
+                <input id="search-input" type="search" placeholder="Buscar título" aria-label="Buscar juegos">
 
-                <article class="card game">
-                    <img src="img/Forza.webp" alt="Portada Juego 2" width="220">
-                    <h3>Juego 2: Carreras Pro</h3>
-                    <p class="muted">Carreras • Multijugador</p>
-                    <p class="price">€39.99</p>
-                    <button class="btn btn-primary">Comprar</button>
-                </article>
+                <label for="filter-select">Filtrar por género:</label>
+                <select id="filter-select" aria-label="Filtrar catálogo por género">
+                    <option value="all">Todos</option>
+                </select>
 
-                <article class="card game">
-                    <img src="img/screenshot-1041.avif" alt="Portada Juego 3" width="220">
-                    <h3>Juego 3: Estrategia Total</h3>
-                    <p class="muted">Estrategia • 1 jugador</p>
-                    <p class="price">€29.99</p>
-                    <button class="btn btn-primary">Comprar</button>
-                </article>
+                <label class="favorites-control" for="favorites-toggle">
+                    <input id="favorites-toggle" type="checkbox">
+                    Solo favoritos
+                </label>
             </div>
+
+            <div class="catalog-status">
+                <p id="selected-game-info" class="status-message" aria-live="polite">Selecciona un juego del catálogo para ver más información.</p>
+                <p id="favorites-count" class="status-message">Favoritos: 0</p>
+            </div>
+
+            <div class="grid" aria-label="Listado de juegos"></div>
         </section>
 
         <section id="ofertas">
@@ -79,7 +75,7 @@
 
             <form id="newsletter-form" aria-label="Suscripción newsletter" action="#" method="post">
                 <label for="email">Suscríbete a nuestro boletín</label>
-                <div style="display:flex;gap:.5rem;margin-top:.5rem;">
+                <div class="form-group">
                     <input id="email" name="email" type="email" placeholder="tu@correo.example" required>
                     <button class="btn btn-primary" type="submit">Suscribir</button>
                 </div>
