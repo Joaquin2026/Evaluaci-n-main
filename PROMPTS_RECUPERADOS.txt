@@ -1,0 +1,83 @@
+═══════════════════════════════════════════════════════════════════════════════
+PROMPTS RECUPERADOS DE TUS CONVERSACIONES CON GITHUB COPILOT
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA DE RECUPERACIÓN: 21 de mayo de 2026
+ARCHIVOS DE ORIGEN: 
+  - 3583cc33-53ab-401f-8ee7-4f4977c56eec.jsonl
+  - 5dc84dbc-1ce8-4721-933d-be577e5d6f24.jsonl
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CONVERSACIÓN 1 (5dc84dbc-1ce8-4721-933d-be577e5d6f24)
+HORA DE INICIO: 2026-05-21 04:24:12 UTC
+
+--- PROMPT 1 ---
+Tu pregunta fue (implícita): ¿Cómo cambio de cuenta de GitHub en VS Code?
+
+Respuesta de Copilot:
+"## Cambiar cuenta de GitHub en Visual Studio Code
+
+1. Abre VS Code.
+2. Haz clic en el icono de tu cuenta en la esquina inferior izquierda.
+3. Selecciona `Sign out` o `Cerrar sesión` en la sección de GitHub.
+4. Vuelve a iniciar sesión con la cuenta de GitHub que quieras usar:
+   - Haz clic en el mismo icono de cuenta.
+   - Elige `Sign in to GitHub` o `Iniciar sesión en GitHub`.
+5. Si usas credenciales de Git en terminal, puede que también necesites actualizar el gestor de credenciales de Windows:
+   - Abre `Credential Manager` en Windows.
+   - Busca entradas relacionadas con `git:https://github.com`.
+   - Elimina esas entradas para forzar el nuevo inicio de sesión.
+
+> Si quieres, puedo guiarte paso a paso con capturas de pantalla o revisar si tienes alguna extensión como GitHub Pull Requests instalada."
+
+--- PROMPT 2 ---
+Tu pregunta: "me refiero a aqui mismo para conectar con mi cuenta principal de github"
+
+(Conversación continuada pero incompleta en el registro)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CONVERSACIÓN 2 (3583cc33-53ab-401f-8ee7-4f4977c56eec)
+HORA DE INICIO: 2026-05-21 04:29:54 UTC
+
+--- PROMPT 1 ---
+Tu pregunta fue (implícita): ¿Cómo puedo recuperar prompts que hice anteriormente?
+
+Respuesta de Copilot:
+"Voy a crear un plan breve para recuperar tus prompts y luego buscaré en el repo."
+(Se creó un plan de 3 pasos para recuperar tus prompts)
+
+--- PROMPT 2 ---
+Tu pregunta: "haz lo que sea necesario pero no son los prompts que aparecen en readme sino otros que le consulte a la ia de github para ver si hay alguna forma de recuperarlos"
+
+(Conversación continuada con búsquedas en transcripts)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+INFORMACIÓN ADICIONAL
+═══════════════════════════════════════════════════════════════════════════════
+
+UBICACIÓN DE LOS ARCHIVOS ORIGINALES:
+C:\Users\joaqu\AppData\Roaming\Code\User\workspaceStorage\
+  4a289c312eea9cdae03f8a4bdb256e10\
+  GitHub.copilot-chat\transcripts\
+
+ARCHIVOS ENCONTRADOS:
+1. 3583cc33-53ab-401f-8ee7-4f4977c56eec.jsonl (Sesión actual - Recuperación de prompts)
+2. 5dc84dbc-1ce8-4721-933d-be577e5d6f24.jsonl (Sesión anterior - GitHub account)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+NOTAS:
+- Los transcripts se almacenan en formato JSONL en la carpeta de workspaceStorage de VSCode
+- Cada conversación tiene un ID único (UUID)
+- Los prompts incluyen tanto tus preguntas como las respuestas de Copilot
+- Los archivos se guardan automáticamente en VSCode cuando usas Copilot Chat
+
+Si necesitas recuperar más prompts, pueden estar almacenados en:
+  - El archivo state.vscdb en la misma carpeta workspaceStorage
+  - El debug-logs/ folder para información detallada
+  - El historial local de VSCode si tienes la extensión Local History activada
+
+═══════════════════════════════════════════════════════════════════════════════
